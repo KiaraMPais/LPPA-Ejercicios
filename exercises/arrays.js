@@ -1,19 +1,19 @@
 const meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
-// Ejercicio 3.A - EnConsola
+// Ejercicio 3.A
 function ejercicio3A(){
     console.log(meses[4], meses[10]);
 }
 
 //  Ejercicio 3.B
 function ejercicio3B(){
-    const mesesOrdenados = [...meses].sort();
+    let mesesOrdenados = meses.sort();
     console.log(mesesOrdenados);
 }
 
 // Ejercicio 3.C
 function ejercicio3C(){
-    const expandido = [...meses];
+    let expandido = meses.slice();
     expandido.unshift('NoEsMes');
     expandido.push('NoEsMes');
     console.log(expandido);
@@ -21,7 +21,7 @@ function ejercicio3C(){
 
 // Ejercicio 3.D
 function ejercicio3D(){
-    const reducido = [...meses];
+    let reducido = meses.slice();
     reducido.shift();
     reducido.pop();
     console.log(reducido);
@@ -29,19 +29,18 @@ function ejercicio3D(){
 
 // Ejercicio 3.E
 function ejercicio3E(){
-    const invertido = [...meses].reverse();
+    let invertido = meses.reverse();
     console.log(invertido);
 }
 
 // Ejercicio 3.F
 function ejercicio3F(){
-    const concatenado = meses.join('-');
+    let concatenado = meses.join('-');
     console.log(concatenado);
 }
 
 // Ejercicio 3.G
 function ejercicio3G(){
-    const copiado = meses.slice(4, 11);
+    let copiado = meses.slice(4, 11);
     console.log(copiado);
 }
-

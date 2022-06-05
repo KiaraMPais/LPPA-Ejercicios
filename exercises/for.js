@@ -10,8 +10,11 @@ function ejercicio5A(){
 // Ejercicio 5.B
 function ejercicio5B(){
     palabras.forEach(word => {
-        const modificada = word[0].toUpperCase() + word.substring(1).toLowerCase();
-        alert(modificada);
+        if(word.substring(0,1) === word.substring(0,1).toLowerCase())
+        {
+            let modificada = word[0].toUpperCase() + word.substring(1).toLowerCase();
+            alert(modificada);
+        }
     });
 }
 
@@ -26,7 +29,7 @@ function ejercicio5C(){
 
 // Ejercicio 5.D
 function ejercicio5D(){
-    const numeros = [];
+    let numeros = [];
     for (let i = 0; i < 10; i += 1) {
         numeros.push(i);
     }

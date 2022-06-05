@@ -1,7 +1,7 @@
 // Ejercicio 6.A - Consola
 function ejercicio6A(){
-    const suma = (a, b) => a + b;
-    const resultadoPrimero = suma(3, 4);
+    let suma = (a, b) => a + b;
+    let resultadoPrimero = suma(3, 4);
     console.log(resultadoPrimero);
 }
 
@@ -19,7 +19,7 @@ console.log(resultadoB);
 
 // Ejercicio 6.C
 function ejercicio6C(){
-    const validateInteger = numero => Number.isInteger(numero);
+    let validateInteger = numero => Number.isInteger(numero);
     console.log(validateInteger(30));
     console.log(validateInteger(30.4));
     console.log(validateInteger('palabra'));
@@ -29,7 +29,7 @@ function ejercicio6C(){
 // Ejercicio 6.D
 function ejercicio6D()
 {
-    const sumaRedondeada = (a, b) => {
+    let sumaRedondeada = (a, b) => {
         if (typeof a !== 'numero' || typeof b !== 'numero') {
             alert('Ambos valores son numeros');
             return NaN;
@@ -46,7 +46,7 @@ function ejercicio6D()
 
 // Ejercicio 6.E
 function ejercicio6E(){
-    const sumaSegunda = (a, b) => (a, b);
+    let sumaSegunda = (a, b) => (a, b);
     console.log(sumaSegunda(30.4, 50.3));
     console.log(sumaSegunda(30.4, 100));
     console.log(sumaSegunda('50', '100'));

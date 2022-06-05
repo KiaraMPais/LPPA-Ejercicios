@@ -7,33 +7,36 @@ function ejercicio2A(){
 
 // Ejercicio 2.B
 function ejercicio2B(){
-    const resultadoString = primeraString.substring(0, 5);
+    let resultadoString = primeraString.substring(0, 5);
     console.log(resultadoString);
 }
 
 // Ejercicio 2.C
 function ejercicio2C(){
-    const rtaString = primeraString.substring(primeraString.length - 3);
+    let rtaString = primeraString.substring(primeraString.length - 3);
     console.log(rtaString);
 }
 
 // Ejercicio 2.D
 function ejercicio2D(){
-    const title = primeraString[0].toUpperCase() + primeraString.substring(1).toLowerCase();
+    let title = primeraString[0].toUpperCase() + primeraString.substring(1).toLowerCase();
     console.log(title);
 }
 
 // Ejercicio 2.E
 function ejercicio2E(){
-    const index = primeraString.indexOf(' ');
+    let index = primeraString.indexOf(' ');
     console.log(index);
 }
 
 // Ejercicio 2.F
 function ejercicio2F(){
-    const mayusculas = primeraString
-    .split(' ')
-    .map(palabra => palabra[0].toUpperCase() + palabra.substring(1).toLowerCase())
-    .join(' ');
-    console.log(mayusculas);
+    let mayusculas = primeraString
+    let espacio = nuevaString.indexOf(" ");
+    let resultado = nuevaString.substring(0,1).toUpperCase() +
+                nuevaString.substring(1, espacio).toLowerCase() +
+                nuevaString.substring(espacio, espacio + 2).toUpperCase() + 
+                nuevaString.substring(espacio + 2).toLowerCase();
+                  
+  console.log(resultado);
 }
