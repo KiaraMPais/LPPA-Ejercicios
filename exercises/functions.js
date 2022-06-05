@@ -14,7 +14,7 @@ const sumaValidacion = (a, b) => {
 
     return a + b;
 };
-const resultadoB = sumaValidada(3, 4);
+const resultadoB = sumaValidacion(3, 4);
 console.log(resultadoB);
 
 // Ejercicio 6.C
