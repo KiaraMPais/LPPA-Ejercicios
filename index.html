@@ -4,18 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <script src="variables_and_operators.js"></script>
+    <script src="exercises/variables_and_operators.js" defer></script>
+    <script src="exercises/strings.js" defer></script>
+    <script src="exercises/arrays.js" defer></script>
+    <script src="exercises/if_else.js" defer></script>
+    <script src="exercises/for.js" defer></script>
+    <script src="exercises/functions.js" defer></script>
     <title>Ejercicios PDF</title>
 </head>
 <body>
-
-    
+    <div class="Ejercicio 1">
+        <h1>Ejercicios 1: Valores y Operadores</h1>
+        <p>a. Crear dos variables numéricas y utilizar el operador suma para guardar el valor de la suma de ambos números en una 3er variable.</p>
+        <button onclick="ejercicio1A()">Ejercicio 1A</button>
+        <p>b. Crear dos variables de tipo String y concatenarlas guardando el resultado en una 3er variable.</p>
+        <button onclick="ejercicio1B()">Ejercicio 1B</button>
+        <p>c. Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras del string) guardando el resultado de la suma en una 3er variable (utilizar length).</p>
+        <button onclick="ejercicio1C()">Ejercicio 1C</button>
+    </div>
+    <div class="Ejercicio 2">
+        <h1>Ejercicio 2: Strings</h1>
+        <p>a. Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto en mayúscula (utilizar toUpperCase).</p>
+        <button onclick="ejercicio2A()">Ejercicio 2A</button>
+        <p>b. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los primeros 5 caracteres guardando el resultado en una nueva variable (utilizar substring).</p>
+        <button onclick="ejercicio2B()">Ejercicio 2B</button>
+        <p>c. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con los últimos 3 caracteres guardando el resultado en una nueva variable (utilizar substring).</p>
+        <button onclick="ejercicio2C()">Ejercicio 2C</button>
+        <p>d. Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string con la primera letra en mayúscula y las demás en minúscula. Guardar el resultado en una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).</p>
+        <button onclick="ejercicio2D()">Ejercicio 2D</button>
+        <p>e. Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco. Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar indexOf)</p>
+        <button onclick="ejercicio2E()">Ejercicio 2E</button>
+        <P>f. Crear una variable de tipo string con al menos 2 palabras largas (10 caracteres y algún espacio entre medio). Utilizar los métodos de los ejercicios anteriores para generar un nuevo string que tenga la primera letra de ambas palabras en mayúscula y las demás letras en minúscula (utilizar indexOf, substring, toUpperCase, toLowerCase y el operador +).</P>
+        <button onclick="ejercicio2F()">Ejercicio 2F</button>
+    </div>
+    <div class="Ejercicio 3">
+        <h1>Ejercicio 3: Arrays</h1>
+        <P>a. Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por consola los meses 5 y 11 (utilizar console.log).</P>
+        <button onclick="ejercicio3A()">Ejercicio 3A</button>
+        <P>b. Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).</P>
+        <button onclick="ejercicio3B()">Ejercicio 3B</button>
+        <P>c. Agregar un elemento al principio y al final del array (utilizar unshift y push).</P>
+        <button onclick="ejercicio3C()">Ejercicio 3C</button>
+        <P>d. Quitar un elemento del principio y del final del array (utilizar shift y pop).</P>
+        <button onclick="ejercicio3D()">Ejercicio 3D</button>
+        <P>e. Invertir el orden del array (utilizar reverse).</P>
+        <button onclick="ejercicio3E()">Ejercicio 3E</button>
+        <P>f. Unir todos los elementos del array en un único string donde cada mes este separado por un guión - (utilizar join).</P>
+        <button onclick="ejercicio3F()">Ejercicio 3F</button>
+        <P>g. Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice).</P>
+        <button onclick="ejercicio3G()">Ejercicio 3G</button>
+    </div>
+    <div class="Ejercicio 4">
+        <h1>Ejercicio 4: If Else</h1>
+        <P>a. Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” y sino un alerta con el mensaje “Lower than 0,5”.</P>
+        <button onclick="ejercicio4A()">Ejercicio 4A</button>
+        <P>b. Crear una variable “Age” que contenga un número entero entre 0 y 100 y muestre los siguientes mensajes de alerta:</P>
+        <button onclick="ejercicio4B()">Ejercicio 4B</button>
+    </div>
+    <div class="Ejercicio 5">
+        <h1>Ejercicio 5: For</h1>
+        <p>a. Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de JavaScript para mostrar una alerta utilizando cada una de las palabras.</p>
+        <button onclick="ejercicio5A()">Ejercicio 5A</button>
+        <p>b. Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra modificada</p>
+        <button onclick="ejercicio5B()">Ejercicio 5B</button>
+        <p>c. Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un bucle for para ir guardando cada palabra dentro de la variable sentence. Al final mostrar una única alerta con la cadena completa.</p>
+        <button onclick="ejercicio5C()">Ejercicio 5C</button>
+        <P>d. Crear una array vacío y con un bucle for de 10 repeticiones. Llenar el array con el número de la repetición, es decir que al final de la ejecución del bucle for debería haber 10 elementos dentro del array, desde el número 0 hasta al número 9. Mostrar por la consola del navegador el array final (utilizar console.log).</P>
+        <button onclick="ejercicio5D()">Ejercicio 5D</button>
+    </div>
+    <div class="Ejercicio 6">
+        <h1>Ejercicio 6: Funtions</h1>
+        <p>a. Crear una función suma que reciba dos valores numéricos y retorne el resultado. Ejecutar la función y guardar el resultado en una variable, mostrando el valor de dicha variable en la consola del navegador.</p>
+        <button onclick="ejercicio6A()">Ejercicio 6A</button>
+        <p>b. A la función suma anterior, agregarle una validación para controlar si alguno de los parámetros no es un número, mostrar una alerta aclarando que uno de los parámetros tiene error y retornar el valor NaN como resultado.</p>
+        <button onclick="sumaValidacion()">Ejercicio 6B</button>
+        <p>c. Crear una función validate integer que reciba un número como parámetro y devuelva verdadero si es un número entero.</p>
+        <button onclick="ejercicio6C()">Ejercicio 6C</button>
+        <p>d. A la función suma del ejercicio 6b) agregarle una llamada que valide que los números sean enteros. En caso que haya decimales mostrar un alerta con el error y retorna el número convertido a entero (redondeado).</p>
+        <button onclick="ejercicio6D()">Ejercicio 6D</button>
+        <p>e. Convertir la validación del ejercicio 6d) en una función separada y llamarla dentro de la función suma probando que todo siga funcionando igual.</p>
+        <button onclick="ejercicio6E()">Ejercicio 6E</button>
+    </div>
 </body>
 </html>
-
-<script class="Ejercicio1">
-    const primerNumero = 100;
-    const segundoNumero = 50;
-    const Resultado = primerNumero + segundoNumero;
-    console.log(thirdNumber)
-</script>
